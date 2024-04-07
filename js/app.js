@@ -50,7 +50,7 @@ function addBugToList(id, name, bugId, criticality, isResolved) {
     item.id = 'item-' + id;
 
     let bugDescription = document.createElement('span');
-    bugDescription.textContent = 'Bug ID: ' + bugId + ' | Description: ' + name +
+    bugDescription.textContent = 'Bug ID: ' + name + ' | Description: ' + bugId +
         ' | Criticality: ' + getCriticalityLabel(criticality.toString()) +
         ' | Resolved: ' + (isResolved ? 'Yes' : 'No');
 
